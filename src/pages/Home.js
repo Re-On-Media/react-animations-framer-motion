@@ -11,7 +11,7 @@ const Home = () => {
       className="home-container"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{ y: "-100vh", transition: { ease: "easeInOut", duration: 1 } }}
+      exit={{ y: "-100vh", transition: { ease: "easeInOut", duration: 0.5 } }}
     >
       <Logo />
       <Collosal />

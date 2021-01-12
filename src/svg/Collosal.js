@@ -1,31 +1,31 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+const svgVariants = {
+  hidden: { y: "100px" },
+  visible: {
+    y: "-10px",
+    transition: {
+      delay: 1,
+      duration: 3,
+      ease: "easeInOut",
+    },
+  },
+};
+const pathVariants = {
+  hidden: {
+    pathLength: 0,
+  },
+  visible: {
+    pathLength: 1,
+    transition: {
+      delay: 1,
+      duration: 6,
+      ease: "easeInOut",
+    },
+  },
+};
 const Collosal = () => {
-  const svgVariants = {
-    hidden: { y: "100px" },
-    visible: {
-      y: "-10px",
-      transition: {
-        delay: 1,
-        duration: 5,
-        ease: "easeInOut",
-      },
-    },
-  };
-  const pathVariants = {
-    hidden: {
-      pathLength: 0,
-    },
-    visible: {
-      pathLength: 1,
-      transition: {
-        delay: 1,
-        duration: 6,
-        ease: "easeInOut",
-      },
-    },
-  };
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"

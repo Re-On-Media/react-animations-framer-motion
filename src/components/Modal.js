@@ -16,12 +16,13 @@ const modalVariants = {
 
 const Modal = ({ showModal }) => {
   return (
-    <motion.div className="modal-container">
+    <>
       {showModal && (
         <motion.form
           variants={modalVariants}
           initial="hidden"
           animate="visible"
+          className="form"
         >
           <input type="hidden" name="form-name" value="form-ch" />
           <div>
@@ -42,7 +43,7 @@ const Modal = ({ showModal }) => {
           </Link>
         </motion.form>
       )}
-    </motion.div>
+    </>
   );
 };
 

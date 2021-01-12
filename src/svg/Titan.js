@@ -2,27 +2,28 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../App.css";
 
-const Titan3 = () => {
-  const svgVariants = {
-    hidden: { opacity: 1, x: "50vw" },
-    visible: {
-      opacity: 1,
-      x: "0vw",
-      transition: { ease: "easeInOut", duration: 1 },
+const svgVariants = {
+  hidden: { opacity: 1, x: "50vw" },
+  visible: {
+    opacity: 1,
+    x: "0vw",
+    transition: { ease: "easeInOut", duration: 1 },
+  },
+};
+const pathVariants = {
+  hidden: {
+    pathLength: 0,
+  },
+  visible: {
+    pathLength: 1,
+    transition: {
+      duration: 7,
+      ease: "easeInOut",
     },
-  };
-  const pathVariants = {
-    hidden: {
-      pathLength: 0,
-    },
-    visible: {
-      pathLength: 1,
-      transition: {
-        duration: 7,
-        ease: "easeInOut",
-      },
-    },
-  };
+  },
+};
+
+const Titan = () => {
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
@@ -1845,4 +1846,4 @@ const Titan3 = () => {
   );
 };
 
-export default Titan3;
+export default Titan;

@@ -2,27 +2,26 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../App.css";
 
+const svgVariants = {
+  hidden: { y: "50vh" },
+  visible: {
+    y: 0,
+    transition: { duration: 4, ease: "easeOut" },
+  },
+};
+const pathVariants = {
+  hidden: {
+    pathLength: 0,
+  },
+  visible: {
+    pathLength: 1,
+    transition: {
+      duration: 6,
+      ease: "easeInOut",
+    },
+  },
+};
 const Logo = () => {
-  const svgVariants = {
-    hidden: { scale: 2, y: "50vh" },
-    visible: {
-      scale: 1,
-      y: 0,
-      transition: { duration: 6, ease: "easeOut" },
-    },
-  };
-  const pathVariants = {
-    hidden: {
-      pathLength: 0,
-    },
-    visible: {
-      pathLength: 1,
-      transition: {
-        duration: 10,
-        ease: "easeInOut",
-      },
-    },
-  };
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"

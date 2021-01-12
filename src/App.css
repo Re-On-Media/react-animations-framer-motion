@@ -3,14 +3,6 @@
   padding: 0;
 }
 .App {
-  /*
-  background: linear-gradient(0deg, #860a0a, #000000);
-  background-size: 400% 400%;
-  animation-name: AnimationName;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-  */
   height: 100vh;
   background-color: black;
   color: white;
@@ -139,16 +131,13 @@
   cursor: pointer;
 }
 
-.modal-container {
-  position: absolute;
-  width: 50%;
-  z-index: 2;
-}
-
-.modal-container > form {
+.form {
   background-color: white;
   color: black;
   padding: 30px;
+  position: absolute;
+  width: 50%;
+  z-index: 2;
 }
 
 label,
@@ -187,28 +176,3 @@ textarea {
   border-radius: 5px;
   margin: 20px auto 20px;
 }
-
-/*
-
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 0%;
-  }
-
-  20% {
-    background-position: 50% 15%;
-  }
-
-  50% {
-    background-position: 100% 40%;
-  }
-
-  75% {
-    background-position: 50% 15%;
-  }
-
-  100% {
-    background-position: 0% 0%;
-  }
-}
-*/
