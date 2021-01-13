@@ -2,12 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const modalVariants = {
+const containerVariants = {
   hidden: {
     x: "100vw",
     opacity: 0,
   },
-  visible: {
+  show: {
     x: "0vw",
     opacity: 1,
     transition: { delay: 0.5 },
@@ -19,24 +19,23 @@ const Modal = ({ showModal }) => {
     <>
       {showModal && (
         <motion.form
-          variants={modalVariants}
+          variants={containerVariants}
           initial="hidden"
-          animate="visible"
+          animate="show"
           className="form"
         >
-          <input type="hidden" name="form-name" value="form-ch" />
           <div>
-            <label htmlFor="">Name</label> <input type="text" name="name" />
+            <label htmlFor="">Name</label> <input type="text" />
           </div>
           <div>
             <label htmlFor="">Enter your email</label>
-            <input type="text" name="email" />
+            <input type="text" />
           </div>
           <div>
             <label className="msg" htmlFor="">
               Message
             </label>
-            <textarea name="message" id=""></textarea>
+            <textarea className="txt-area"></textarea>
           </div>
           <Link className="link" to="/">
             <button className="form-button">Submit</button>

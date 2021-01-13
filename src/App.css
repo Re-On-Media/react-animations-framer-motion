@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 .App {
   height: 100vh;
   background-color: black;
@@ -14,59 +15,9 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  color: white;
-}
-
-#titan3 {
-  width: 70%;
-  fill: transparent;
-  margin: 0 auto;
-}
-
-#shingekiLogo {
-  fill: black;
-  width: 800px;
-  margin: 300px auto 0;
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.logoPath {
-  stroke: white;
-  stroke-width: 2px;
-}
-
-.arrow-down {
-  color: white;
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 50px;
-  text-align: center;
-  width: 100%;
-  font-size: 50px;
-  z-index: 2;
-}
-
-.link {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-#titan3 > *:hover {
-  fill: red;
-}
-
-.titanPath {
-  stroke: white;
-  stroke-width: 2px;
 }
 
 #collosalSvg {
-  fill: black;
   width: 800px;
   text-align: center;
   position: absolute;
@@ -77,9 +28,41 @@
   margin-right: auto;
 }
 
-.collosal {
+#collosalSvg > path {
   stroke: white;
   stroke-width: 2px;
+}
+
+#shingekiLogo {
+  width: 800px;
+  margin: 300px auto 0;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#shingekiLogo > path {
+  stroke: white;
+  stroke-width: 2px;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 50px;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  z-index: 1;
+}
+
+.link {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .about-container {
@@ -89,6 +72,7 @@
 
 .about-container > h1 {
   text-align: center;
+  font-size: 50px;
 }
 
 .about-desc {
@@ -101,22 +85,33 @@
 }
 
 .about-desc > p {
-  line-height: 1.6;
+  line-height: 1.5;
   font-size: 20px;
   width: 80%;
   margin: 0 auto;
 }
 
+#titan {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#titan > path {
+  stroke: white;
+  stroke-width: 2px;
+}
+
 .newsletter-container {
   display: flex;
+  height: 100vh;
   flex-direction: column;
-  height: 90vh;
   align-items: center;
   justify-content: center;
 }
 
 .newsletter-container > h1 {
   margin-bottom: 30px;
+  font-size: 40px;
 }
 
 .newsletter-button {
@@ -140,13 +135,8 @@
   z-index: 2;
 }
 
-label,
-input,
-textarea {
-  display: block;
-}
-
 label {
+  display: block;
   padding-top: 15px;
 }
 
@@ -154,11 +144,14 @@ input {
   border-top: none;
   border-left: none;
   border-right: none;
+  display: block;
   padding-top: 5px;
+  margin-bottom: 5px;
 }
 
 textarea {
   width: 90%;
+  display: block;
   height: 200px;
   margin: 0 auto;
   margin-top: 10px;

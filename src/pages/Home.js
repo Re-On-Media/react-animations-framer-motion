@@ -15,29 +15,23 @@ const Home = () => {
     >
       <Logo />
       <Collosal />
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: 2, delay: 4 } }}
-        className="arrow-container"
+      <motion.h1
+        initial={{ y: -10 }}
+        animate={{
+          y: 10,
+          transition: {
+            duration: 1,
+            ease: "easeIn",
+            repeat: Infinity,
+            repeatType: "reverse",
+          },
+        }}
+        className="arrow-down"
       >
-        <motion.h1
-          initial={{ y: -10 }}
-          animate={{
-            y: 10,
-            transition: {
-              duration: 1,
-              ease: "easeIn",
-              repeat: Infinity,
-              repeatType: "reverse",
-            },
-          }}
-          className="arrow-down"
-        >
-          <Link className="link" to="/about">
-            &#8659;
-          </Link>
-        </motion.h1>
-      </motion.div>
+        <Link className="link" to="/about">
+          &#8659;
+        </Link>
+      </motion.h1>
     </motion.div>
   );
 };

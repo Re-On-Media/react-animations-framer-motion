@@ -4,11 +4,11 @@ import { AnimatePresence } from "framer-motion";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Newsletter from "./pages/Newsletter";
-
 import "./App.css";
 
 function App() {
   const location = useLocation();
+
   return (
     <div className="App">
       <AnimatePresence exitBeforeEnter>

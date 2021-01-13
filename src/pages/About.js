@@ -8,7 +8,7 @@ const containerVariants = {
     opacity: 0,
     y: "50vh",
   },
-  visible: {
+  show: {
     opacity: 1,
     y: 0,
     transition: {
@@ -28,7 +28,7 @@ const About = () => {
       className="about-container"
       variants={containerVariants}
       initial="hidden"
-      animate="visible"
+      animate="show"
       exit="exit"
     >
       <h1>About</h1>

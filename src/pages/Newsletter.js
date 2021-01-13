@@ -7,7 +7,7 @@ const containerVariants = {
   hidden: {
     y: "50vh",
   },
-  visible: {
+  show: {
     opacity: 1,
     y: 0,
     transition: {
@@ -29,7 +29,7 @@ const Newsletter = () => {
       className="newsletter-container"
       variants={containerVariants}
       initial="hidden"
-      animate="visible"
+      animate="show"
       exit="exit"
     >
       <h1>¿Desea recibir más información?</h1>
