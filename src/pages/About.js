@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import Titan from "../svg/Titan";
+import Titan from "../components/Titan";
 
 const containerVariants = {
   hidden: {
@@ -18,7 +18,7 @@ const containerVariants = {
   },
   exit: {
     y: "-100vh",
-    transition: { ease: "easeInOut", duration: 0.5 },
+    transition: { ease: "easeInOut", duration: 0.8 },
   },
 };
 

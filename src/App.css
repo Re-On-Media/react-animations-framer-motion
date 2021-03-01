@@ -17,7 +17,7 @@
   overflow: hidden;
 }
 
-#collosalSvg {
+#colosalSvg {
   width: 800px;
   text-align: center;
   position: absolute;
@@ -28,7 +28,7 @@
   margin-right: auto;
 }
 
-#collosalSvg > path {
+#colosalSvg > path {
   stroke: white;
   stroke-width: 2px;
 }
